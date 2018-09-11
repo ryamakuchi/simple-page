@@ -4,6 +4,12 @@
   "main": "index.js",
   "author": "ryamakuchi <r.yamakuchi@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "clean:css": "rimraf src/css",
+    "build:scss": "yarn run clean:css && node-sass --recursive src/scss --output src/css",
+    "build:scss:watch": "nodemon --watch src/scss --ext scss --exec 'yarn run build:scss'",
+    "serve": "browser-sync start --server 'src' --files 'src/css/*.css', 'src/*.html'"
+  },
   "devDependencies": {
     "browser-sync": "^2.24.7",
     "node-sass": "^4.9.3",
