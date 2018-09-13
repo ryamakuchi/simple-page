@@ -22,7 +22,7 @@
 .pc-none {
   display: block;
   @media (min-width: $breakpoint--is-small) {
-    display: block;
+    display: none;
   }
 }
 
