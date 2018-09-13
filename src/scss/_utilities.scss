@@ -5,9 +5,25 @@
   clear: both;
 }
 
-// 要素を非表示にするclass
+// 非表示にするclass
 .hidden {
   display: none;
+}
+
+// 要素を非表示にするclass（モバイルファースト）
+// モバイルのときは非表示にする
+.sp-none {
+  display: none;
+  @media (min-width: $breakpoint--is-small) {
+    display: block;
+  }
+}
+// PCのときは非表示にする
+.pc-none {
+  display: block;
+  @media (min-width: $breakpoint--is-small) {
+    display: block;
+  }
 }
 
 // 一行の文字の末尾を「...」にするclass
