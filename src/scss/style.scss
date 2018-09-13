@@ -3,9 +3,12 @@
 @import "foundation/colors";
 @import "foundation/settings";
 @import "foundation/reset";
+@import "foundation/typography";
 
 @import "layout/header";
 @import "layout/footer";
 @import "layout/main";
+
+@import "components/top";
 
 @import "utilities";
