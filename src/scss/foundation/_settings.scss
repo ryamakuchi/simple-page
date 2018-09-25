@@ -5,7 +5,7 @@ $breakpoint--is-small: 768px;
 $font-family-base: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
 $font-size-base: 1.4rem;
 $font-weight-base: normal;
-$line-height-base: 2rem;
+$line-height-base: 2;
 $letter-spacing-base: 0.2px;
 
 // Typography
@@ -26,3 +26,6 @@ $table-cell-padding: .3rem;
 
 // Form
 $label-margin-bottom: .5rem;
+
+// transition
+$transition-time: 0.15s;

@@ -1,16 +1,16 @@
-// floatを解除するclass
+// floatを解除する
 .clearfix::after {
   content: '';
   display: block;
   clear: both;
 }
 
-// 非表示にするclass
+// 非表示にする
 .hidden {
   display: none;
 }
 
-// 要素を非表示にするclass（モバイルファースト）
+// 要素を非表示にする（モバイルファースト）
 // モバイルのときは非表示にする
 .sp-none {
   display: none;
@@ -26,9 +26,18 @@
   }
 }
 
-// 一行の文字の末尾を「...」にするclass
+// 一行の文字の末尾を「...」にする
 .ellipsis {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+// hoverすると少し透過する
+.shine {
+  transition: opacity $transition-time;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
