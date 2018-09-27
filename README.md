@@ -34,3 +34,7 @@ yarn run serve
 * CSS3
   * SCSS
   * BEM
+
+
+## コードチェック
+* code-check.mdを参照
